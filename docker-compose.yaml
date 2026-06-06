@@ -1,0 +1,9 @@
+services:
+  jerob-doc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jerob-doc
+    ports:
+      - "5173:5173"
+    restart: unless-stopped
